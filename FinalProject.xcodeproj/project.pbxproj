@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		841E933B20BAC4AA0043C9DA /* Elshiekh.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 841E933A20BAC4AA0043C9DA /* Elshiekh.storyboard */; };
 		84C48FB420B89EC600488744 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84C48FB320B89EC600488744 /* AppDelegate.swift */; };
 		84C48FB620B89EC600488744 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84C48FB520B89EC600488744 /* ViewController.swift */; };
 		84C48FB920B89EC600488744 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 84C48FB720B89EC600488744 /* Main.storyboard */; };
@@ -15,7 +16,6 @@
 		84C48FC920B89EC700488744 /* FinalProjectTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84C48FC820B89EC700488744 /* FinalProjectTests.swift */; };
 		84C48FD420B89EC700488744 /* FinalProjectUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84C48FD320B89EC700488744 /* FinalProjectUITests.swift */; };
 		84C48FE220B89F2C00488744 /* Usama.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 84C48FE120B89F2C00488744 /* Usama.storyboard */; };
-		84C48FE420B89F4900488744 /* Shawarby.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 84C48FE320B89F4900488744 /* Shawarby.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,6 +36,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		841E933A20BAC4AA0043C9DA /* Elshiekh.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Elshiekh.storyboard; sourceTree = "<group>"; };
 		84C48FB020B89EC600488744 /* FinalProject.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FinalProject.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		84C48FB320B89EC600488744 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		84C48FB520B89EC600488744 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -50,7 +51,6 @@
 		84C48FD320B89EC700488744 /* FinalProjectUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FinalProjectUITests.swift; sourceTree = "<group>"; };
 		84C48FD520B89EC700488744 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		84C48FE120B89F2C00488744 /* Usama.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Usama.storyboard; sourceTree = "<group>"; };
-		84C48FE320B89F4900488744 /* Shawarby.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Shawarby.storyboard; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -104,8 +104,8 @@
 				84C48FB320B89EC600488744 /* AppDelegate.swift */,
 				84C48FB520B89EC600488744 /* ViewController.swift */,
 				84C48FB720B89EC600488744 /* Main.storyboard */,
+				841E933A20BAC4AA0043C9DA /* Elshiekh.storyboard */,
 				84C48FE120B89F2C00488744 /* Usama.storyboard */,
-				84C48FE320B89F4900488744 /* Shawarby.storyboard */,
 				84C48FBA20B89EC700488744 /* Assets.xcassets */,
 				84C48FBC20B89EC700488744 /* LaunchScreen.storyboard */,
 				84C48FBF20B89EC700488744 /* Info.plist */,
@@ -235,10 +235,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				84C48FE420B89F4900488744 /* Shawarby.storyboard in Resources */,
 				84C48FBE20B89EC700488744 /* LaunchScreen.storyboard in Resources */,
 				84C48FBB20B89EC700488744 /* Assets.xcassets in Resources */,
 				84C48FE220B89F2C00488744 /* Usama.storyboard in Resources */,
+				841E933B20BAC4AA0043C9DA /* Elshiekh.storyboard in Resources */,
 				84C48FB920B89EC600488744 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
