@@ -38,6 +38,7 @@ PODS:
   - SDWebImage/WebP (4.3.3):
     - libwebp (~> 0.5)
     - SDWebImage/Core
+  - TextFieldEffects (1.4.0)
 
 DEPENDENCIES:
   - Alamofire (~> 4.7)
@@ -45,6 +46,7 @@ DEPENDENCIES:
   - GooglePlacePicker
   - GooglePlaces
   - SDWebImage/WebP
+  - TextFieldEffects
 
 SPEC REPOS:
   https://github.com/CocoaPods/Specs.git:
@@ -54,6 +56,7 @@ SPEC REPOS:
     - GooglePlaces
     - libwebp
     - SDWebImage
+    - TextFieldEffects
 
 SPEC CHECKSUMS:
   Alamofire: e4fa87002c137ba2d8d634d2c51fabcda0d5c223
@@ -62,7 +65,8 @@ SPEC CHECKSUMS:
   GooglePlaces: 3d06e6c99654545b4738ce49648745779c25f2ef
   libwebp: 0f01098c6c17175391af621b2f14150f3ca16e16
   SDWebImage: de4d90b5bff3571eae7bd16202b1f43135409fa5
+  TextFieldEffects: 4ee41b5216e674d55fb6ac25107bf1af7629176f
 
-PODFILE CHECKSUM: 6d07115f8f95d116b2cb38945fb0ed50181200f3
+PODFILE CHECKSUM: 0bab7fdf5447e0b60a5a5bdb76454d808487f652
 
 COCOAPODS: 1.5.0
