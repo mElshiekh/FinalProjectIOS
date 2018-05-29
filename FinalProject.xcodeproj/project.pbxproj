@@ -10,6 +10,8 @@
 		841E933B20BAC4AA0043C9DA /* Elshiekh.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 841E933A20BAC4AA0043C9DA /* Elshiekh.storyboard */; };
 		8440F9BD20BC6A5400040124 /* Usama.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8440F9BC20BC6A5400040124 /* Usama.storyboard */; };
 		8440F9C720BC6A5400040124 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8440F9C620BC6A5400040124 /* LoginViewController.swift */; };
+		8458FA4E20BDBC0300E791C4 /* NetworkDAL.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8458FA4D20BDBC0300E791C4 /* NetworkDAL.swift */; };
+		8458FA5020BDED0300E791C4 /* ErrorType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8458FA4F20BDED0300E791C4 /* ErrorType.swift */; };
 		849CA24D20BD7BA40047E6CF /* Protocols in Resources */ = {isa = PBXBuildFile; fileRef = 849CA24C20BD7BA40047E6CF /* Protocols */; };
 		849CA25120BD7BC90047E6CF /* UIViewControllerExtention in Resources */ = {isa = PBXBuildFile; fileRef = 849CA24E20BD7BC90047E6CF /* UIViewControllerExtention */; };
 		849CA25220BD7BC90047E6CF /* Errors in Resources */ = {isa = PBXBuildFile; fileRef = 849CA24F20BD7BC90047E6CF /* Errors */; };
@@ -47,6 +49,8 @@
 		841E933A20BAC4AA0043C9DA /* Elshiekh.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Elshiekh.storyboard; sourceTree = "<group>"; };
 		8440F9BC20BC6A5400040124 /* Usama.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Usama.storyboard; sourceTree = "<group>"; };
 		8440F9C620BC6A5400040124 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		8458FA4D20BDBC0300E791C4 /* NetworkDAL.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetworkDAL.swift; sourceTree = "<group>"; };
+		8458FA4F20BDED0300E791C4 /* ErrorType.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ErrorType.swift; sourceTree = "<group>"; };
 		849CA24C20BD7BA40047E6CF /* Protocols */ = {isa = PBXFileReference; lastKnownFileType = folder; path = Protocols; sourceTree = "<group>"; };
 		849CA24E20BD7BC90047E6CF /* UIViewControllerExtention */ = {isa = PBXFileReference; lastKnownFileType = folder; path = UIViewControllerExtention; sourceTree = "<group>"; };
 		849CA24F20BD7BC90047E6CF /* Errors */ = {isa = PBXFileReference; lastKnownFileType = folder; path = Errors; sourceTree = "<group>"; };
@@ -132,6 +136,8 @@
 		8440F9C520BC6A5400040124 /* utilities */ = {
 			isa = PBXGroup;
 			children = (
+				8458FA4F20BDED0300E791C4 /* ErrorType.swift */,
+				8458FA4D20BDBC0300E791C4 /* NetworkDAL.swift */,
 			);
 			path = utilities;
 			sourceTree = "<group>";
@@ -425,6 +431,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8458FA4E20BDBC0300E791C4 /* NetworkDAL.swift in Sources */,
+				8458FA5020BDED0300E791C4 /* ErrorType.swift in Sources */,
 				849CA25520BD82CE0047E6CF /* SignupView.swift in Sources */,
 				8440F9C720BC6A5400040124 /* LoginViewController.swift in Sources */,
 				849CA25720BDA67F0047E6CF /* StringExtension.swift in Sources */,
