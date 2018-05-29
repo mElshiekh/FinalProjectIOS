@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		841E933B20BAC4AA0043C9DA /* Elshiekh.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 841E933A20BAC4AA0043C9DA /* Elshiekh.storyboard */; };
 		8440F9BD20BC6A5400040124 /* Usama.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8440F9BC20BC6A5400040124 /* Usama.storyboard */; };
+		8440F9C720BC6A5400040124 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8440F9C620BC6A5400040124 /* LoginViewController.swift */; };
 		84C48FB420B89EC600488744 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84C48FB320B89EC600488744 /* AppDelegate.swift */; };
 		84C48FB620B89EC600488744 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 84C48FB520B89EC600488744 /* ViewController.swift */; };
 		84C48FB920B89EC600488744 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 84C48FB720B89EC600488744 /* Main.storyboard */; };
@@ -39,6 +40,7 @@
 /* Begin PBXFileReference section */
 		841E933A20BAC4AA0043C9DA /* Elshiekh.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Elshiekh.storyboard; sourceTree = "<group>"; };
 		8440F9BC20BC6A5400040124 /* Usama.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Usama.storyboard; sourceTree = "<group>"; };
+		8440F9C620BC6A5400040124 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		84C48FB020B89EC600488744 /* FinalProject.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FinalProject.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		84C48FB320B89EC600488744 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		84C48FB520B89EC600488744 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -92,9 +94,42 @@
 			name = Pods;
 			sourceTree = "<group>";
 		};
+		8440F9C220BC6A5400040124 /* models */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = models;
+			sourceTree = "<group>";
+		};
+		8440F9C320BC6A5400040124 /* viewcontrollers */ = {
+			isa = PBXGroup;
+			children = (
+				8440F9C620BC6A5400040124 /* LoginViewController.swift */,
+			);
+			path = viewcontrollers;
+			sourceTree = "<group>";
+		};
+		8440F9C420BC6A5400040124 /* presenters */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = presenters;
+			sourceTree = "<group>";
+		};
+		8440F9C520BC6A5400040124 /* utilities */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = utilities;
+			sourceTree = "<group>";
+		};
 		84BC1F0920BC7A9E00AD2616 /* views */ = {
 			isa = PBXGroup;
 			children = (
+				8440F9C520BC6A5400040124 /* utilities */,
+				8440F9C420BC6A5400040124 /* presenters */,
+				8440F9C320BC6A5400040124 /* viewcontrollers */,
+				8440F9C220BC6A5400040124 /* models */,
 			);
 			path = views;
 			sourceTree = "<group>";
@@ -366,6 +401,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8440F9C720BC6A5400040124 /* LoginViewController.swift in Sources */,
 				84C48FB620B89EC600488744 /* ViewController.swift in Sources */,
 				84C48FB420B89EC600488744 /* AppDelegate.swift in Sources */,
 			);
@@ -543,7 +579,10 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = FinalProject/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = ITI.FinalProject;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
@@ -558,7 +597,10 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = FinalProject/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = ITI.FinalProject;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
@@ -573,7 +615,11 @@
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = FinalProjectTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = ITI.FinalProjectTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
@@ -589,7 +635,11 @@
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = FinalProjectTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = ITI.FinalProjectTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
@@ -604,7 +654,11 @@
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = FinalProjectUITests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = ITI.FinalProjectUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
@@ -619,7 +673,11 @@
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = FinalProjectUITests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = ITI.FinalProjectUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
