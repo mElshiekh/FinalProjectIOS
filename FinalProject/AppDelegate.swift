@@ -12,10 +12,11 @@ import UIKit
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
     var window: UIWindow?
-
-
+    
+    static let MAPS_API_KEY:String="AIzaSyDvzgwC9GUcN9r5mYsfpAQwWXEjh-5_Hy4"
+    
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
-        // Override point for customization after application launch.
+       // GMSServices.provideAPIKey(AppDelegate.MAPS_API_KEY)
         return true
     }
 

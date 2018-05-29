@@ -14,10 +14,10 @@
             buildForArchiving = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "F3A9FCBA8267E3CB3709A4F7D8B68FE2"
-               BlueprintName = "SDWebImage"
+               BlueprintIdentifier = "D424923B38A9B9256D68251269F79873"
+               BlueprintName = "GooglePlacesSearchController"
                ReferencedContainer = "container:Pods.xcodeproj"
-               BuildableName = "SDWebImage.framework">
+               BuildableName = "GooglePlacesSearchController.framework">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>

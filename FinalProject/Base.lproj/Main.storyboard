@@ -1,43 +1,92 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
-    <device id="retina4_7" orientation="portrait">
+    <device id="retina3_5" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--Signup View-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="FinalProject" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="SignupView" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="logofinal" translatesAutoresizingMaskIntoConstraints="NO" id="Hy6-JM-k5I">
+                                <rect key="frame" x="110" y="47" width="100" height="93.5"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="Hy6-JM-k5I" secondAttribute="height" multiplier="15:14" id="leN-2M-Exm"/>
+                                    <constraint firstAttribute="width" constant="100" id="pW6-cy-9eQ"/>
+                                </constraints>
+                            </imageView>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="56O-Ha-vn7">
+                                <rect key="frame" x="16" y="160.5" width="288" height="30"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="eAU-bu-ZLK">
+                                <rect key="frame" x="16" y="230.5" width="288" height="30"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="bhn-tH-stt">
+                                <rect key="frame" x="16" y="300.5" width="288" height="30"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="vHv-Ub-ynq">
+                                <rect key="frame" x="16" y="370.5" width="288" height="30"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QjN-zs-HTH">
+                                <rect key="frame" x="16" y="420.5" width="288" height="30"/>
+                                <color key="backgroundColor" red="1" green="0.64999452459999996" blue="0.15928030539999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <state key="normal" title="Button">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                            </button>
+                        </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="bhn-tH-stt" firstAttribute="leading" secondItem="eAU-bu-ZLK" secondAttribute="leading" id="2Qr-Zu-RAD"/>
+                            <constraint firstItem="QjN-zs-HTH" firstAttribute="trailing" secondItem="vHv-Ub-ynq" secondAttribute="trailing" id="Cpw-it-Zke"/>
+                            <constraint firstItem="Hy6-JM-k5I" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="GlT-g5-TgU"/>
+                            <constraint firstItem="vHv-Ub-ynq" firstAttribute="trailing" secondItem="bhn-tH-stt" secondAttribute="trailing" id="IGS-b9-xxW"/>
+                            <constraint firstItem="eAU-bu-ZLK" firstAttribute="trailing" secondItem="56O-Ha-vn7" secondAttribute="trailing" id="Ipd-eG-xQ6"/>
+                            <constraint firstItem="QjN-zs-HTH" firstAttribute="top" secondItem="vHv-Ub-ynq" secondAttribute="bottom" constant="20" id="Jeb-NR-zy6"/>
+                            <constraint firstItem="56O-Ha-vn7" firstAttribute="top" secondItem="Hy6-JM-k5I" secondAttribute="bottom" constant="20" id="LVC-XE-5Qr"/>
+                            <constraint firstItem="vHv-Ub-ynq" firstAttribute="leading" secondItem="bhn-tH-stt" secondAttribute="leading" id="MiF-cW-r8M"/>
+                            <constraint firstItem="eAU-bu-ZLK" firstAttribute="top" secondItem="56O-Ha-vn7" secondAttribute="bottom" constant="40" id="P0A-r0-9Iw"/>
+                            <constraint firstItem="56O-Ha-vn7" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="PXg-o3-mam"/>
+                            <constraint firstItem="Hy6-JM-k5I" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="27" id="RGQ-2V-smP"/>
+                            <constraint firstItem="vHv-Ub-ynq" firstAttribute="top" secondItem="bhn-tH-stt" secondAttribute="bottom" constant="40" id="bxF-Mf-a8M"/>
+                            <constraint firstItem="bhn-tH-stt" firstAttribute="trailing" secondItem="eAU-bu-ZLK" secondAttribute="trailing" id="ii0-hs-OvT"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="56O-Ha-vn7" secondAttribute="trailing" constant="16" id="r4a-7d-AqJ"/>
+                            <constraint firstItem="eAU-bu-ZLK" firstAttribute="leading" secondItem="56O-Ha-vn7" secondAttribute="leading" id="xkS-na-9hU"/>
+                            <constraint firstItem="bhn-tH-stt" firstAttribute="top" secondItem="eAU-bu-ZLK" secondAttribute="bottom" constant="40" id="yVT-Wa-JlL"/>
+                            <constraint firstItem="QjN-zs-HTH" firstAttribute="leading" secondItem="vHv-Ub-ynq" secondAttribute="leading" id="zNx-JG-dDR"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-        </scene>
-        <!--View Controller-->
-        <scene sceneID="CEJ-mI-lWK">
-            <objects>
-                <viewController id="TMb-BH-2Oc" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="2FT-r6-Ru7">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                        <viewLayoutGuide key="safeArea" id="muY-40-O0a"/>
-                    </view>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="Dhv-e9-xFb" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="1503" y="-251"/>
+            <point key="canvasLocation" x="24.375" y="30"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="logofinal" width="872" height="510"/>
+    </resources>
 </document>
