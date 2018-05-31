@@ -13,13 +13,13 @@ class LoginViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        let networkobj:NetworkDAL = NetworkDAL.sharedInstance()
-        
-        let params:Parameters = [
-            "email" : "shiekho1990@gmail.com",
-            "password" : "123456"
-        ]
-        networkobj.processPostReq(withBaseUrl: .mainApi, andUrlSuffix: "auth/login", andParameters: params)
+//        let networkobj:NetworkDAL = NetworkDAL.sharedInstance()
+//
+//        let params:Dictionary<String, Any> = [
+//            "email" : "shiekho1990@gmail.com",
+//            "password" : "123456"
+//        ]
+//        networkobj.processPostReq(withBaseUrl: .mainApi, andUrlSuffix: "auth/login", andParameters: params)
     }
 
     override func didReceiveMemoryWarning() {

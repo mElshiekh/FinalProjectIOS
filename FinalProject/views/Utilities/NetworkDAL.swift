@@ -67,7 +67,7 @@ public class NetworkDAL{
             switch response.result {
             case .success(let data):
                 let jsonData = JSON(data);
-                print("-------*-*-*-----***************-----------------")
+                print("-------*-*-*-----*******------///////-------********-----------------")
                 print(jsonData)
                 //onSuccess(parser(jsonData));
                 
