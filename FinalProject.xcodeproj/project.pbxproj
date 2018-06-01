@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 48;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -12,6 +12,8 @@
 		8440F9C720BC6A5400040124 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8440F9C620BC6A5400040124 /* LoginViewController.swift */; };
 		8458FA4E20BDBC0300E791C4 /* NetworkDAL.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8458FA4D20BDBC0300E791C4 /* NetworkDAL.swift */; };
 		8458FA5020BDED0300E791C4 /* ErrorType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8458FA4F20BDED0300E791C4 /* ErrorType.swift */; };
+		846C5B5820C019B200571932 /* LoginPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 846C5B5720C019B200571932 /* LoginPresenter.swift */; };
+		846C5B5A20C01BBA00571932 /* LoginModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 846C5B5920C01BBA00571932 /* LoginModel.swift */; };
 		849CA24D20BD7BA40047E6CF /* Protocols in Resources */ = {isa = PBXBuildFile; fileRef = 849CA24C20BD7BA40047E6CF /* Protocols */; };
 		849CA25120BD7BC90047E6CF /* UIViewControllerExtention in Resources */ = {isa = PBXBuildFile; fileRef = 849CA24E20BD7BC90047E6CF /* UIViewControllerExtention */; };
 		849CA25220BD7BC90047E6CF /* Errors in Resources */ = {isa = PBXBuildFile; fileRef = 849CA24F20BD7BC90047E6CF /* Errors */; };
@@ -51,6 +53,8 @@
 		8440F9C620BC6A5400040124 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		8458FA4D20BDBC0300E791C4 /* NetworkDAL.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetworkDAL.swift; sourceTree = "<group>"; };
 		8458FA4F20BDED0300E791C4 /* ErrorType.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ErrorType.swift; sourceTree = "<group>"; };
+		846C5B5720C019B200571932 /* LoginPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginPresenter.swift; sourceTree = "<group>"; };
+		846C5B5920C01BBA00571932 /* LoginModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginModel.swift; sourceTree = "<group>"; };
 		849CA24C20BD7BA40047E6CF /* Protocols */ = {isa = PBXFileReference; lastKnownFileType = folder; path = Protocols; sourceTree = "<group>"; };
 		849CA24E20BD7BC90047E6CF /* UIViewControllerExtention */ = {isa = PBXFileReference; lastKnownFileType = folder; path = UIViewControllerExtention; sourceTree = "<group>"; };
 		849CA24F20BD7BC90047E6CF /* Errors */ = {isa = PBXFileReference; lastKnownFileType = folder; path = Errors; sourceTree = "<group>"; };
@@ -113,6 +117,7 @@
 		8440F9C220BC6A5400040124 /* models */ = {
 			isa = PBXGroup;
 			children = (
+				846C5B5920C01BBA00571932 /* LoginModel.swift */,
 			);
 			path = models;
 			sourceTree = "<group>";
@@ -129,6 +134,7 @@
 		8440F9C420BC6A5400040124 /* presenters */ = {
 			isa = PBXGroup;
 			children = (
+				846C5B5720C019B200571932 /* LoginPresenter.swift */,
 			);
 			path = presenters;
 			sourceTree = "<group>";
@@ -293,19 +299,22 @@
 				TargetAttributes = {
 					84C48FAF20B89EC600488744 = {
 						CreatedOnToolsVersion = 9.3;
+						ProvisioningStyle = Automatic;
 					};
 					84C48FC320B89EC700488744 = {
 						CreatedOnToolsVersion = 9.3;
+						ProvisioningStyle = Automatic;
 						TestTargetID = 84C48FAF20B89EC600488744;
 					};
 					84C48FCE20B89EC700488744 = {
 						CreatedOnToolsVersion = 9.3;
+						ProvisioningStyle = Automatic;
 						TestTargetID = 84C48FAF20B89EC600488744;
 					};
 				};
 			};
 			buildConfigurationList = 84C48FAB20B89EC500488744 /* Build configuration list for PBXProject "FinalProject" */;
-			compatibilityVersion = "Xcode 9.3";
+			compatibilityVersion = "Xcode 8.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
 			knownRegions = (
@@ -431,9 +440,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				846C5B5820C019B200571932 /* LoginPresenter.swift in Sources */,
 				8458FA4E20BDBC0300E791C4 /* NetworkDAL.swift in Sources */,
 				8458FA5020BDED0300E791C4 /* ErrorType.swift in Sources */,
 				849CA25520BD82CE0047E6CF /* SignupView.swift in Sources */,
+				846C5B5A20C01BBA00571932 /* LoginModel.swift in Sources */,
 				8440F9C720BC6A5400040124 /* LoginViewController.swift in Sources */,
 				849CA25720BDA67F0047E6CF /* StringExtension.swift in Sources */,
 				84C48FB620B89EC600488744 /* ViewController.swift in Sources */,
@@ -600,8 +611,7 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 11.3;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
-				SWIFT_COMPILATION_MODE = wholemodule;
-				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
 				VALIDATE_PRODUCT = YES;
 			};
 			name = Release;
@@ -613,10 +623,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = FinalProject/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-				);
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = ITI.FinalProject;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
@@ -631,10 +638,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = FinalProject/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-				);
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = ITI.FinalProject;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
@@ -649,11 +653,7 @@
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = FinalProjectTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = ITI.FinalProjectTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
@@ -669,11 +669,7 @@
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = FinalProjectTests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = ITI.FinalProjectTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
@@ -688,11 +684,7 @@
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = FinalProjectUITests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = ITI.FinalProjectUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
@@ -707,11 +699,7 @@
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = FinalProjectUITests/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = ITI.FinalProjectUITests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;

@@ -10,21 +10,45 @@ import UIKit
 import Alamofire
 
 class LoginViewController: UIViewController {
+    
+    var lp:LoginPresenter!
+    
+    @IBOutlet weak var passTxt: UITextField!
+    @IBOutlet weak var wrongEmail: UILabel!
+    
+    @IBOutlet weak var emailTxt: UITextField!
+    @IBOutlet weak var invalidCredTxt: UILabel!
+    
+    @IBAction func loginBut(_ sender: Any) {
+        if (emailTxt.text?.matches(String((String.regexes.email).rawValue)))! {
+            wrongEmail.text=""
+            lp.login(withUserName: emailTxt.text!, andPassword: passTxt.text!)
+        }
+        else{
+            wrongEmail.text = "Invalid E-mail"
+        }
+    }
 
+    @IBAction func forgotPass(_ sender: Any) {
+        
+    }
+    @IBAction func registerBut(_ sender: Any) {
+        let shawarbystory = UIStoryboard(name: "Main", bundle: nil)
+        let signup = shawarbystory.instantiateViewController(withIdentifier: "signup")
+        self.present(signup, animated: true, completion: nil)
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-//        let networkobj:NetworkDAL = NetworkDAL.sharedInstance()
-//
-//        let params:Dictionary<String, Any> = [
-//            "email" : "shiekho1990@gmail.com",
-//            "password" : "123456"
-//        ]
-//        networkobj.processPostReq(withBaseUrl: .mainApi, andUrlSuffix: "auth/login", andParameters: params)
+        
+        wrongEmail.text=""
+        invalidCredTxt.text=""
+        
+        lp = LoginPresenter(withController: self)
     }
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
     }
     
 
@@ -37,5 +61,12 @@ class LoginViewController: UIViewController {
         // Pass the selected object to the new view controller.
     }
     */
+    func ChangeLabel(withString str:String){
+        invalidCredTxt.text = str
+    }
+    func goToScreen(withScreenName name:String){
+        
+        
+    }
 
 }

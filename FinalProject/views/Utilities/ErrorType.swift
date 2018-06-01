@@ -11,4 +11,5 @@ enum ErrorType:String,Error{
     case internet = "Check your internet connection"
     case location = "Allow app to use location in order to continue"
     case parse = "Error parsing Json"
+    case unauthorized = "Response status code was unacceptable: 401"
 }
